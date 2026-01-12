@@ -301,7 +301,9 @@ sudo apt install dialog
 
 ---
 
+## Örnek Çalıştırma Youtube Videsu Linki
 
+---
 
 
 
