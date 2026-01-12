@@ -82,7 +82,7 @@ Bu ekranda sistemde aktif olan servisler, yüklenme durumu ve çalışma bilgile
 * Çalışma durumu
 * Alt durum bilgisi
 
-📸 *Bu bölüme servis listesi ekran görüntüsü eklenmelidir.*
+<img src="images/o2.png">
 
 ---
 
@@ -97,7 +97,10 @@ Kullanıcıdan bir servis adı alınır ve bu servise ait detaylı durum bilgisi
 * Çalışma süresi
 * Son log mesajları
 
-📸 *Bu bölüme servis durumu gösterim ekran görüntüsü eklenmelidir.*
+<img src="images/o3.1.png">
+<br>
+<img src="images/o3.2.png">
+
 
 ---
 
@@ -109,9 +112,13 @@ Bu ekranlarda kullanıcıdan servis adı alınır ve seçilen işlem gerçekleş
 **Örnek İşlemler:**
 
 * ssh.service başlatma
+<img src="images/o4.1.png">
+<br>
 * apache2.service durdurma
-
-📸 *Bu bölüme bilgilendirme (info) penceresi ekran görüntüsü eklenmelidir.*
+<img src="images/o5.png">
+<br>
+* yeniden başaltma
+<img src="images/o6.1.png">
 
 ---
 
@@ -120,7 +127,10 @@ Bu ekranlarda kullanıcıdan servis adı alınır ve seçilen işlem gerçekleş
 **Açıklama:**
 Seçilen servisin hata durumu, başarısız başlatma denemeleri ve genel sağlık bilgisi gösterilir.
 
-📸 *Bu bölüme servis sağlık kontrolü ekran görüntüsü eklenmelidir.*
+<img src="images/o7.1.png">
+<br>
+<img src="images/o7.2.png">
+
 
 ---
 
@@ -141,44 +151,67 @@ TUI, terminal ortamında çalışan kullanıcılar için geliştirilmiş metin t
 
 **Açıklama:**
 Bu ekran TUI uygulamasının başlangıç ekranıdır. Kullanıcı yön tuşları ve Enter ile seçim yapar.
+Uygulama çalıştırıldığında aşağıdaki ana menü ekrana gelir:
 
-📸 *Bu bölüme TUI ana menü ekran görüntüsü eklenmelidir.*
+* Servis Durum Tablosu
+* Servis Loglarını Göster
+* Cron Job Ekle
+* Sistem Bilgisi
+* Servis Sağlık Kontrolü
+* Çıkış
 
+<img src="images/oo1.png">
 ---
 
-### 📟 TUI – Servisleri Listele
+### 📟 TUI – Servis Durum Tablosu
 
 **Açıklama:**
-Terminal ekranında servislerin listelendiği bölümdür. GUI ile aynı bilgileri metin tabanlı olarak sunar.
+Bu seçenek, sistemdeki servislerin aktif / pasif / başarısız durumlarını tablo halinde gösterir.
 
-📸 *Bu bölüme TUI servis listesi ekran görüntüsü eklenmelidir.*
-
+<img src="images/oo1.2.png">
 ---
 
-### 📟 TUI – Servis Durumu Göster
+### 📟 TUI – Servis Loglarını Göster
 
 **Açıklama:**
-Kullanıcıdan alınan servis adına göre detaylı servis durumu terminal ekranında gösterilir.
+Kullanıcıdan bir servis adı alınır ve seçilen servise ait systemd logları ekranda görüntülenir.
 
-📸 *Bu bölüme TUI servis durumu ekran görüntüsü eklenmelidir.*
-
+<img src="images/oo2.png">
 ---
 
-### 📟 TUI – Servis Başlat / Durdur / Yeniden Başlat
+### 📟 TUI – Cron Job Ekle
 
 **Açıklama:**
-Kullanıcı tarafından girilen servis adı üzerinde başlatma, durdurma veya yeniden başlatma işlemleri yapılır.
+Bu bölümde kullanıcıdan zaman bilgisi ve çalıştırılacak komut alınarak cron job eklenir.
 
-📸 *Bu bölüme TUI işlem sonucu ekran görüntüsü eklenmelidir.*
-
+<img src="images/oo3.png">
 ---
 
+### 📟 TUI - Sistem Bİlgisi
+
+**Açklama:**
+Bu menü, sistem hakkında genel bilgileri gösterir:
+* İşletim sistemi bilgisi
+* Kernel sürümü
+* CPU bilgisi
+* RAM durumu
+* Disk kullanımı
+
+<img src="images/oo4.png">
+
+---
 ### 📟 TUI – Servis Sağlık Kontrolü
 
 **Açıklama:**
 Servisin genel durumu ve olası hataları terminal arayüzü üzerinden incelenir.
 
-📸 *Bu bölüme TUI sağlık kontrolü ekran görüntüsü eklenmelidir.*
+<img src="images/oo5.png">
+---
+
+### 📟 TUI - ❌ Çıkış
+
+**Açıklama:**
+Bu seçenek ile uygulama güvenli bir şekilde sonlandırılır.
 
 ---
 
