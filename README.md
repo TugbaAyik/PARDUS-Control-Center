@@ -4,8 +4,6 @@
 
 **PARDUS Control Center**, Linux sistemlerde servis yönetimini kolaylaştırmak amacıyla geliştirilmiş, **GUI (Graphical User Interface)** ve **TUI (Terminal User Interface)** destekli bir sistem yönetim aracıdır. Proje, özellikle **systemctl** tabanlı servislerin durumunu görüntüleme ve yönetme işlemlerini kullanıcı dostu bir arayüzle sunmayı hedefler.
 
-Bu proje, Linux komut satırı araçları için frontend geliştirme fikrini temel alır ve ders kapsamında istenen formatla birebir uyumludur.
-
 ---
 
 ## 🎯 Projenin Amacı
@@ -68,8 +66,7 @@ Bu ekran, GUI uygulamasının giriş noktasıdır. Kullanıcı burada yapmak ist
 * **Servis Sağlık Kontrolü:** Servisin genel sağlık ve hata durumunu kontrol eder
 * **Çıkış:** Uygulamadan çıkar
 
-📸 *Bu bölüme GUI ana menü ekran görüntüsü eklenmelidir.*
-
+<img src="o1.png">
 ---
 
 ### 🪟 GUI – Servisleri Listele
@@ -270,32 +267,7 @@ sudo apt install dialog
 
 ---
 
-## 📚 Ders Kapsamı ile Uyumluluk
 
-Bu proje:
 
-* Linux komut satırı aracı için frontend geliştirme şartını karşılar
-* systemctl aracı temel alınmıştır
-* GUI ve TUI desteğiyle kapsamı genişletilmiştir
 
----
 
-## 🚀 Gelecek Geliştirmeler
-
-* Cron job yönetimi GUI’si
-* Disk / RAM / CPU izleme paneli
-* Servis durumlarını renkli ve ikonlu gösterim
-* Pardus için özel optimizasyonlar
-
----
-
-## 👤 Geliştirici
-
-**Tuğba Nur A.**
-Bilgisayar Mühendisliği Öğrencisi
-
----
-
-## 📝 Not
-
-Bu proje eğitim amaçlı geliştirilmiştir ve Linux sistem yönetimi konularında pratik kazanmayı hedefler.
