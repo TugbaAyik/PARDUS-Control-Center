@@ -66,7 +66,8 @@ Bu ekran, GUI uygulamasının giriş noktasıdır. Kullanıcı burada yapmak ist
 * **Servis Sağlık Kontrolü:** Servisin genel sağlık ve hata durumunu kontrol eder
 * **Çıkış:** Uygulamadan çıkar
 
-<img src="o1.png">
+<img src="images/o1.png">
+
 ---
 
 ### 🪟 GUI – Servisleri Listele
