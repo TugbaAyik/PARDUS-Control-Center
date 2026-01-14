@@ -1,12 +1,12 @@
 # PARDUS-Control-Center
 
-## 📌 Proje Tanımı
+## Proje Tanımı
 
 **PARDUS Control Center**, Linux sistemlerde servis yönetimini kolaylaştırmak amacıyla geliştirilmiş, **GUI (Graphical User Interface)** ve **TUI (Terminal User Interface)** destekli bir sistem yönetim aracıdır. Proje, özellikle **systemctl** tabanlı servislerin durumunu görüntüleme ve yönetme işlemlerini kullanıcı dostu bir arayüzle sunmayı hedefler.
 
 ---
 
-## 🎯 Projenin Amacı
+## Projenin Amacı
 
 * Linux servis yönetimini teknik bilgisi sınırlı kullanıcılar için erişilebilir hale getirmek
 * Komut satırı araçlarına GUI ve TUI arayüzler kazandırmak
@@ -15,7 +15,7 @@
 
 ---
 
-## 🧩 Proje Mimarisi
+## Proje Mimarisi
 
 Proje **3 ana bileşenden** oluşur:
 
@@ -27,7 +27,7 @@ proje/
 └── README.md
 ```
 
-### 🔹 core.sh
+### core.sh
 
 * Servis listeleme
 * Servis durumu görüntüleme
@@ -38,7 +38,7 @@ proje/
 
 ---
 
-## 🖥️ GUI (Graphical User Interface)
+## GUI (Graphical User Interface)
 
 GUI, **YAD (Yet Another Dialog)** aracı kullanılarak geliştirilmiştir. Grafik arayüz, kullanıcıların servis yönetimini fare ve klavye yardımıyla kolayca yapabilmesini sağlar.
 
@@ -51,7 +51,7 @@ GUI, **YAD (Yet Another Dialog)** aracı kullanılarak geliştirilmiştir. Grafi
 
 ---
 
-### 🪟 GUI – Ana Menü
+### GUI – Ana Menü
 
 **Açıklama:**
 Bu ekran, GUI uygulamasının giriş noktasıdır. Kullanıcı burada yapmak istediği servis yönetimi işlemini seçer.
@@ -70,7 +70,7 @@ Bu ekran, GUI uygulamasının giriş noktasıdır. Kullanıcı burada yapmak ist
 
 ---
 
-### 🪟 GUI – Servisleri Listele
+### GUI – Servisleri Listele
 
 **Açıklama:**
 Bu ekranda sistemde aktif olan servisler, yüklenme durumu ve çalışma bilgileri tablo halinde gösterilir.
@@ -86,7 +86,7 @@ Bu ekranda sistemde aktif olan servisler, yüklenme durumu ve çalışma bilgile
 
 ---
 
-### 🪟 GUI – Servis Durumu Göster
+### GUI – Servis Durumu Göster
 
 **Açıklama:**
 Kullanıcıdan bir servis adı alınır ve bu servise ait detaylı durum bilgisi görüntülenir.
@@ -104,7 +104,7 @@ Kullanıcıdan bir servis adı alınır ve bu servise ait detaylı durum bilgisi
 
 ---
 
-### 🪟 GUI – Servis Başlat / Durdur / Yeniden Başlat
+### GUI – Servis Başlat / Durdur / Yeniden Başlat
 
 **Açıklama:**
 Bu ekranlarda kullanıcıdan servis adı alınır ve seçilen işlem gerçekleştirilir.
@@ -122,7 +122,7 @@ Bu ekranlarda kullanıcıdan servis adı alınır ve seçilen işlem gerçekleş
 
 ---
 
-### 🪟 GUI – Servis Sağlık Kontrolü
+### GUI – Servis Sağlık Kontrolü
 
 **Açıklama:**
 Seçilen servisin hata durumu, başarısız başlatma denemeleri ve genel sağlık bilgisi gösterilir.
@@ -134,7 +134,7 @@ Seçilen servisin hata durumu, başarısız başlatma denemeleri ve genel sağl�
 
 ---
 
-## 🖧 TUI (Terminal User Interface)
+## TUI (Terminal User Interface)
 
 TUI, terminal ortamında çalışan kullanıcılar için geliştirilmiş metin tabanlı bir arayüzdür. **dialog / whiptail** kullanılarak oluşturulmuştur.
 
@@ -147,7 +147,7 @@ TUI, terminal ortamında çalışan kullanıcılar için geliştirilmiş metin t
 
 ---
 
-### 📟 TUI – Ana Menü
+### TUI – Ana Menü
 
 **Açıklama:**
 Bu ekran TUI uygulamasının başlangıç ekranıdır. Kullanıcı yön tuşları ve Enter ile seçim yapar.
@@ -163,7 +163,7 @@ Uygulama çalıştırıldığında aşağıdaki ana menü ekrana gelir:
 <img src="images/oo1.png">
 ---
 
-### 📟 TUI – Servis Durum Tablosu
+### TUI – Servis Durum Tablosu
 
 **Açıklama:**
 Bu seçenek, sistemdeki servislerin aktif / pasif / başarısız durumlarını tablo halinde gösterir.
@@ -171,7 +171,7 @@ Bu seçenek, sistemdeki servislerin aktif / pasif / başarısız durumlarını t
 <img src="images/oo1.2.png">
 ---
 
-### 📟 TUI – Servis Loglarını Göster
+### TUI – Servis Loglarını Göster
 
 **Açıklama:**
 Kullanıcıdan bir servis adı alınır ve seçilen servise ait systemd logları ekranda görüntülenir.
@@ -179,7 +179,7 @@ Kullanıcıdan bir servis adı alınır ve seçilen servise ait systemd logları
 <img src="images/oo2.png">
 ---
 
-### 📟 TUI – Cron Job Ekle
+### TUI – Cron Job Ekle
 
 **Açıklama:**
 Bu bölümde kullanıcıdan zaman bilgisi ve çalıştırılacak komut alınarak cron job eklenir.
@@ -187,7 +187,7 @@ Bu bölümde kullanıcıdan zaman bilgisi ve çalıştırılacak komut alınarak
 <img src="images/oo3.png">
 ---
 
-### 📟 TUI - Sistem Bİlgisi
+### TUI - Sistem Bİlgisi
 
 **Açklama:**
 Bu menü, sistem hakkında genel bilgileri gösterir:
@@ -200,7 +200,7 @@ Bu menü, sistem hakkında genel bilgileri gösterir:
 <img src="images/oo4.png">
 
 ---
-### 📟 TUI – Servis Sağlık Kontrolü
+###  TUI – Servis Sağlık Kontrolü
 
 **Açıklama:**
 Servisin genel durumu ve olası hataları terminal arayüzü üzerinden incelenir.
@@ -208,14 +208,14 @@ Servisin genel durumu ve olası hataları terminal arayüzü üzerinden inceleni
 <img src="images/oo5.png">
 ---
 
-### 📟 TUI - ❌ Çıkış
+###  TUI - Çıkış
 
 **Açıklama:**
 Bu seçenek ile uygulama güvenli bir şekilde sonlandırılır.
 
 ---
 
-## ⚙️ Kullanılan Teknolojiler
+##  Kullanılan Teknolojiler
 
 * **Bash Script**
 * **systemctl** (systemd)
@@ -225,11 +225,11 @@ Bu seçenek ile uygulama güvenli bir şekilde sonlandırılır.
 
 ---
 
-## 🛠️ Kurulum Talimatları
+##  Kurulum Talimatları
 
 Aşağıdaki adımlar, projenin temiz bir Linux sistemde çalıştırılması için izlenmelidir.
 
-### 1️⃣ Proje Dosyalarının Hazırlanması
+###  Proje Dosyalarının Hazırlanması
 
 Proje dosyaları aynı dizin altında bulunmalıdır:
 
@@ -241,7 +241,7 @@ proje/
 └── README.md
 ```
 
-### 2️⃣ Çalıştırma İzinlerinin Verilmesi
+### Çalıştırma İzinlerinin Verilmesi
 
 Terminal üzerinden proje dizinine girilerek aşağıdaki komutlar çalıştırılmalıdır:
 
@@ -249,7 +249,7 @@ Terminal üzerinden proje dizinine girilerek aşağıdaki komutlar çalıştır�
 chmod +x core.sh gui.sh tui.sh
 ```
 
-### 3️⃣ Gerekli Paketlerin Kurulması
+### Gerekli Paketlerin Kurulması
 
 #### GUI için gerekli paketler:
 
@@ -268,7 +268,7 @@ sudo apt install dialog
 
 ---
 
-## 💻 Sistem Gereksinimleri
+## Sistem Gereksinimleri
 
 ### Minimum Gereksinimler
 
@@ -284,7 +284,7 @@ sudo apt install dialog
 
 ---
 
-## 🔐 Yetkilendirme ve Güvenlik
+## Yetkilendirme ve Güvenlik
 
 * Servis durumu görüntüleme işlemleri normal kullanıcı ile çalışır
 * Servis başlatma/durdurma işlemleri için **sudo / pkexec** kullanılabilir
@@ -292,7 +292,7 @@ sudo apt install dialog
 
 ---
 
-## ✨ Özgünlük ve Katma Değer
+## Özgünlük ve Katma Değer
 
 * Aynı çekirdek mantığıyla **çift arayüz (GUI + TUI)**
 * Linux sistem yönetimini sadeleştiren frontend yaklaşımı
@@ -302,6 +302,8 @@ sudo apt install dialog
 ---
 
 ## Örnek Çalıştırma Youtube Videsu Linki
+
+https://youtu.be/rnYXhdTajU8
 
 ---
 
